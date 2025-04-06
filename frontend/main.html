@@ -103,7 +103,7 @@
         async function startCamera() {
             try {
                 const stream = await navigator.mediaDevices.getUserMedia({ 
-                    video: { width: 1280, height: 720 }  // Higher resolution
+                    video: { width: 1280, height: 720 }  
                 });
                 videoElement.srcObject = stream;
             } catch (err) {
@@ -114,14 +114,14 @@
         window.addEventListener('DOMContentLoaded', startCamera);
     </script>
 
-    <!-- TensorFlow.js and COCO-SSD -->
+
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.18.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
     <script src="js/config.js" type="module"></script>
     <script src="js/gemini.js" type="module"></script>
     
-    <!-- Main App Logic -->
+
     <script src="js/app.js"></script>
 </body>
 </html>

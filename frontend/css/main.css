@@ -141,7 +141,7 @@ nav a {
     }
 
     #textDisplay {
-        white-space: pre-wrap; /* Preserve newlines in chat */
+        white-space: pre-wrap; 
         min-height: 100px;
         max-height: 300px;
         overflow-y: auto;
